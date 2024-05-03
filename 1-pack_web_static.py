@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Fabric script generates tgz archive fromcontents of the web_static
+Fabric script generates tgz archive from web_static
 folder of AirBnB Clone repo.
 """
 from datetime import datetime

@@ -19,7 +19,7 @@ def do_pack():
         arch_name = "versions/web_static_{}.tgz".format(date)
         local("tar -cvzf {} web_static".format(arch_name))
         return arch_name
-    except:
+    except Exception:
         return None
 
 
@@ -40,7 +40,7 @@ def do_deploy(archive_path):
         run('rm -rf /data/web_static/current')
         run('ln -s {}{}/ /data/web_static/current'.format(path, no_extent))
         return True
-    except:
+    except Exception:
         return False
 
 

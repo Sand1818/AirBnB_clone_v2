@@ -22,6 +22,7 @@ def do_pack():
     except:
         return None
 
+
 def do_deploy(archive_path):
     """deploys Archive"""
     if exists(archive_path) is False:
@@ -41,6 +42,7 @@ def do_deploy(archive_path):
         return True
     except:
         return False
+
 
 def deploy():
     """Creates archive & uploads it to web servers"""
